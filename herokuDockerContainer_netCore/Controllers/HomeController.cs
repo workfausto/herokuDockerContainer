@@ -28,6 +28,11 @@ namespace herokuDockerContainer_netCore.Controllers
             return View();
         }
 
+        public IActionResult Employees()
+        {
+            return View("Views/Employee/Index.cshtml");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
